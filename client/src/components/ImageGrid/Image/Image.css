@@ -1,0 +1,62 @@
+.imageContainer {
+    position: relative;
+}
+.image {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 1.5rem;
+}
+.imageOverlay {
+    position: absolute;
+    top: 1.5rem;
+    bottom: .2rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.35);
+    opacity: 0;
+    border-radius: 16px;
+    transition: opacity .2s linear;
+}
+.imageOverlay:hover {
+    opacity: 1;
+}
+.imageText {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.12rem;
+    font-weight: 700;
+    bottom: 0;
+    color: #FFF;
+}
+.deleteButton {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    background-color: transparent;
+    color:tomato;
+    border: 1px solid tomato;
+    border-radius: 16px;
+    transition: all .2s;
+}
+.deleteButton:hover {
+    background-color: rgba(255,0,0,0.5);
+    color: rgb(255,177,163);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+}
+.deleteButton:active {
+    color: red;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .image {
+        margin-top: 1.2rem;
+    }
+}
+@media (max-width: 480px) {
+    .image {
+        margin-top: 1rem;
+    }
+}

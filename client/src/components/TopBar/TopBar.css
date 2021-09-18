@@ -1,0 +1,107 @@
+.topBar {
+    width: 100%;
+    height: 3.43rem;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+.icons {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.iconsText {
+    display: flex;
+    flex-direction: column;
+}
+.iconsText h1 {
+    text-align: left;
+    font-size: clamp(14px, .88rem, 1rem);
+    margin: 0;
+    padding: 0;
+}
+.iconsText p {
+    font-size: .56rem;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.searchBar {
+    max-width: 18.75rem;
+    max-height: 3.43rem;
+    width: 40%;
+    height: 60%;
+    margin-left: clamp(0px, 1rem, 16px);
+    padding: .3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #BDBDBD;
+    filter: drop-shadow(0px 1px 6px rgba(0,0,0,0.1));
+    border-radius: 12px;
+}
+.searchBar .material-icons {
+    margin-left: clamp(0px, 1rem, 5%);
+    font-size: clamp(1rem, 24px, 1.5rem);
+}
+.searchBar input {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-size: .88rem;
+    flex-grow: 1;
+    padding: 0;
+    margin: auto 1.25rem auto .2rem;
+    overflow: hidden;
+}
+
+.addBtn {
+    margin: auto;
+    margin-right: 0;
+    max-width: 8.5rem;
+    max-height: 3.45rem;
+    width: 20%;
+    height: 80%;
+    padding: 1rem 1.25rem;
+    background-color: #3DB46D;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+
+.addBtn:hover {
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    background-color: #3DB96D;
+    cursor: pointer;
+}
+
+.addBtn:active {
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    background-color: #3DF06D;
+}
+
+@media (max-width: 768px){
+    .searchBar {
+        margin-left: .3rem;
+        margin-right: .3rem;
+    }
+    .searchBar .input {
+        font-size: .5rem;
+    }
+    .addBtn {
+        padding: 0;
+        font-size: .7rem;
+        white-space: normal;
+    }
+}

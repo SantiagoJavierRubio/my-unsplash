@@ -1,0 +1,125 @@
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalBox {
+    z-index: 2;
+    background-color: #FFF;
+    border-radius: 12px;
+    width: clamp(40%, 38.75rem, 95%);
+    padding: 1.2rem 2rem;
+}
+.modalTitle {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+.modalForm {
+    display: flex;
+    flex-direction: column;
+}
+.modalForm label {
+    font-size: .88rem;
+    color: #4F4F4F;
+    font-weight: 500;
+}
+.modalForm>input {
+    width: 100%;
+    height: 3rem;
+    margin: .8rem;
+    font-size: 1.2rem;
+    border: 1px solid #4F4F4F;
+    filter: drop-shadow(0px 1px 6px rgba(0,0,0,0.1));
+    border-radius: 12px;
+}
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.submitButton {
+    margin-left: .5rem;
+    padding: 1rem 1.25rem;
+    background-color: #3DB46D;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+.submitButton:hover {
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    background-color: #3DB96D;
+    cursor: pointer;
+}   
+.submitButton:active {
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    background-color: #3DF06D;
+}
+.cancelButton {
+    padding: 1rem 1.25rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #BDBDBD;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+.cancelButton:hover {
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
+    color: #FFF;
+    cursor: pointer;
+}
+.cancelButton:active {
+    color: #BDBDBD;
+    box-shadow: none;
+    background-color: transparent;
+}
+.modalDeleteButton {
+    margin-left: .5rem;
+    padding: 1rem 1.25rem;
+    background-color: #EB5757;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+.modalDeleteButton:hover {
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    background-color: #eb3b3b;
+    cursor: pointer;
+}   
+.modalDeleteButton:active {
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    background-color: #db7e7e;
+}
