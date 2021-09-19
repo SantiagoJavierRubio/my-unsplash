@@ -34,7 +34,7 @@ function App() {
   }, [filter, images]);
 
   // Check if URL is for a valid image
-  const checkImage = (url) => {
+  const checkImage = async (url) => {
     const img = new Image();
     img.src = url;
     if(img.complete) {
