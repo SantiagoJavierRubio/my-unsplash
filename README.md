@@ -79,4 +79,4 @@ $ npm start
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/SantiagoJavierRubio)
+- GitHub [@SantiagoJavierRubio](https://github.com/SantiagoJavierRubio)
