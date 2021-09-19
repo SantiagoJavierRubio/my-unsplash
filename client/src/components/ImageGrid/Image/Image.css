@@ -54,9 +54,15 @@
     .image {
         margin-top: 1.2rem;
     }
+    .imageOverlay {
+        top: 1.2rem;
+    }
 }
 @media (max-width: 480px) {
     .image {
         margin-top: 1rem;
+    }
+    .imageOverlay {
+        top: 1rem;
     }
 }

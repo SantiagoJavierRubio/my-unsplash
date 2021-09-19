@@ -7,13 +7,20 @@ const ImageGrid = (props) => {
 
     const { openModal, apiData } = props;
 
-    return(
-        <div className="masonry">
-            {apiData.map((image, index) => {
-                return <Image imgData={image} openModal={openModal} key={index}/>
-            })}
-        </div>
-    )
+    if(apiData.length !== 0){
+        return(
+            <div className="masonry">
+                {apiData.map((image, index) => {
+                    return <Image imgData={image} openModal={openModal} key={index}/>
+                })}
+            </div>
+        )
+    } else {
+        return(
+            <h3 className="noImageMsg">No images found</h3>
+        )
+    }
+
 }
 
 

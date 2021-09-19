@@ -3,6 +3,11 @@
     column-gap: 1.5rem;
 }
 
+.noImageMsg {
+    margin: 2rem auto;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .masonry {
         columns: 2 auto;
